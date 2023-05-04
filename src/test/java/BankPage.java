@@ -10,26 +10,26 @@ public class BankPage {
         this.driver = driver;
     }
     @FindBy(xpath = "//*[contains(@ng-click, 'addCust()')]")
-    private WebElement customerBtn;
+    private WebElement customerButton;
     @FindBy(xpath = "//*[contains(@ng-click, 'openAccount()')]")
-    private WebElement accountBtn;
+    private WebElement accountButton;
     @FindBy(xpath = "//*[contains(@ng-click, 'showCust()')]")
-    private WebElement showBtn;
+    private WebElement showButton;
     @FindBy(xpath = "//*[contains(@ng-click, 'home()')]")
-    private WebElement buttonHome;
+    private WebElement homeButton;
 
 
-        public void clickcustomerBtn() {
-            customerBtn.click();
+        public void clickCustomerButton() {
+            customerButton.click();
         }
-        public void clickAccountBtn() {
-            accountBtn.click();
+        public void clickAccountButton() {
+            accountButton.click();
         }
-        public void clickshowBtn () {
-            showBtn.click();
+        public void clickShowButton () {
+            showButton.click();
         }
-        public void clickbuttonHome () {
-            buttonHome.click();
+        public void clickHomeButton () {
+            homeButton.click();
         }
 
 }

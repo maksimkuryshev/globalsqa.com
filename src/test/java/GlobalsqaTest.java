@@ -37,27 +37,26 @@ public class GlobalsqaTest {
     @Test
     public void GlobalsqaTest() {
 
-        bankPage.clickcustomerBtn();
-        addCustomerPage.inputfirstName();
-        addCustomerPage.inputlastName();
-        addCustomerPage.inputpostCode();
-        addCustomerPage.clickaddCustomer();
+        bankPage.clickCustomerButton();
+        addCustomerPage.inputFirstName();
+        addCustomerPage.inputLastName();
+        addCustomerPage.inputPostCode();
+        addCustomerPage.clickAddCustomer();
         systemAlertPage.closeSystemAlert();
-        bankPage.clickAccountBtn();
-        openAccountPage.clickBtncustomer();
-        openAccountPage.clickpersonCustomer();
-        openAccountPage.clickBtncurrency();
-        openAccountPage.clickcurrencyDollar();
-        openAccountPage.clickbuttonProcess();
-        systemAlertPage.closeSystemAlert();
-        bankPage.clickshowBtn();
+        bankPage.clickAccountButton();
+        openAccountPage.clickCustomerButton();
+        openAccountPage.clickPersonCustomer();
+        openAccountPage.clickCurrencyButton();
+        openAccountPage.clickСurrencyDollar();
+        openAccountPage.clickPersonCustomer();
+        bankPage.clickShowButton();
         customersPage.searchCustomer();
-        customersPage.clickdelete1Customer();
-        bankPage.clickbuttonHome();
+        customersPage.clickDeleteCustomer();
+        bankPage.clickHomeButton();
         homePage.clickcustomerLogin();
-        homePage.clickyourName();
-        homePage.clickharrypotter();
-        homePage.clickloginBtn();
+        homePage.clickYourName();
+        homePage.clickHarryPotter();
+        homePage.clickLoginBtn();
     }
 }
 

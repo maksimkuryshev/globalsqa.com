@@ -10,33 +10,33 @@ public class HomePage {
         this.driver = driver;
     }
     @FindBy(xpath = "//*[contains(@ng-click,'customer()')]")
-    private WebElement customerLogin;
+    private WebElement customerLoginButton;
     @FindBy(xpath = "/html/body/div/div/div[2]/div/div[1]/div[2]/button")
-    private WebElement managerLogin;
+    private WebElement managerLoginButton;
 
     @FindBy(id="userSelect")
-    private WebElement yourName;
+    private WebElement choiceYourName;
 
     @FindBy(xpath = "//*[@id='userSelect']/option[3]")
-    private WebElement harryPotter;
+    private WebElement customerHarryPotter;
 
     @FindBy(xpath = "/html/body/div/div/div[2]/div/form/button")
-    private WebElement  loginBtn;
+    private WebElement  loginButton;
 
     public void clickcustomerLogin() {
-        customerLogin.click();
+        customerLoginButton.click();
     }
     public void clickmanagerLogin() {
-        managerLogin.click();
+        managerLoginButton.click();
     }
-    public void clickyourName(){
-        yourName.click();
+    public void clickYourName(){
+        choiceYourName.click();
     }
-    public void clickharrypotter(){
-        harryPotter.click();
+    public void clickHarryPotter(){
+        customerHarryPotter.click();
     }
-    public void clickloginBtn(){
-        loginBtn.click();
+    public void clickLoginBtn(){
+        loginButton.click();
     }
 
 }

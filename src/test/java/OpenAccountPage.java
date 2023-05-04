@@ -12,37 +12,37 @@ public class OpenAccountPage {
     }
 
     @FindBy(id = "userSelect")
-    private WebElement Btncustomer;
+    private WebElement customerButton;
 
     @FindBy(id = "currency")
-    private WebElement Btncurrency;
+    private WebElement currencyButton;
 
     @FindBy(xpath = "/html/body/div/div/div[2]/div/div[2]/div/div/form/button")
-    private WebElement buttonProcess;
+    private WebElement processButton;
 
     @FindBy(xpath = "//*[@id=\"userSelect\"]/option[7]")
     private WebElement personCustomer;
 
     @FindBy(xpath = "//*[@id=\"currency\"]/option[2]")
-    private WebElement currencyDollar;
+    private WebElement СurrencyDollar;
 
 
-    public void clickBtncustomer() {
-        Btncustomer.click();
+    public void clickCustomerButton() {
+        customerButton.click();
     }
 
-    public void clickBtncurrency() {
-        Btncurrency.click();
+    public void clickCurrencyButton() {
+        currencyButton.click();
     }
 
-    public void clickbuttonProcess() {
-        buttonProcess.click();
+    public void clickProcessButton() {
+       processButton.click();
     }
-    public void clickpersonCustomer() {
+    public void clickPersonCustomer() {
         personCustomer.click();
     }
-    public void clickcurrencyDollar() {
-        currencyDollar.click();
+    public void clickСurrencyDollar() {
+        СurrencyDollar.click();
     }
 }
 

@@ -18,21 +18,18 @@ public class AddCustomerPage {
     private WebElement postCode;
     @FindBy(xpath = "/html/body/div/div/div[2]/div/div[2]/div/div/form/button")
     private WebElement addCustomer;
-    }
-    public void clickaddCustomer() {
+
+    public void clickAddCustomer() {
         addCustomer.click();
     }
-    public void inputfirstName() {
+    public void inputFirstName() {
         firstName.sendKeys("Ivan");
-
     }
-
-    public void inputlastName(){
+    public void inputLastName(){
         lastName.sendKeys("Ivanov");
     }
 
-    public void inputpostCode(){
+    public void inputPostCode(){
         postCode.sendKeys("Text");
     }
-
 }
